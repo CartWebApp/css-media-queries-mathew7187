@@ -62,14 +62,28 @@
   height: 18vh;
 }
 
-/* Tablet Styles*/
-
+/* Tablet Styles*/  
+@media screen and (max-width: 1024px){
+  .third,
+  .quarter{
+    width: calc(97% / 2);
+  }
+  
+  [class^="box"]:last-child {
+   /* width: 98%; */
+   flex-grow:1;
+  }
+  
+  .flex-container {
+    height: fit-content;
+  }
+}
 
 
 
 /* Mobile Styles*/
-
-
-
-
-
+@media screen and (max-width: 520px){
+  [class^="box"]{
+    width: 97%;
+  }
+}
